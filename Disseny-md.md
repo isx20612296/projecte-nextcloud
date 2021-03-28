@@ -24,3 +24,5 @@ Per inserir fotos
 []!(fotos/markdown.png)
 
 > Aixo es un comentari
+
+També estem intentant que els push surtin a Taiga
