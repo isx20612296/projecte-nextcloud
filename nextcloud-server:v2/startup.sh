@@ -30,6 +30,7 @@ chown www-data:www-data /var/www/nextcloud/ -R
 
 service apache2 start
 
+chmod +x /opt/docker/occ_apps.sh
 su www-data -s /bin/bash -c '/opt/docker/occ_apps.sh'
 
 /bin/bash
