@@ -1,0 +1,6 @@
+crear /var/www/certs
+copiar el certificat i clau a /var/www/certs
+Tocar el ds-ssl.conf.tmpl
+copiar el ds-ssl.conf.tmpl a ds.conf
+reiniciar nginx
+

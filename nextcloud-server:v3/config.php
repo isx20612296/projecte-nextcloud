@@ -20,4 +20,5 @@ $CONFIG = array (
   'dbpassword' => 'jupiter',
   'installed' => true,
   'instanceid' => 'oczrw2ftq5am',
+  'allow_local_remote_servers' => true,
 );
