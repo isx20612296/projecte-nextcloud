@@ -3,3 +3,5 @@
 "jupiter" --admin-user "ncadmin" --admin-pass "jupiter"
 
 /usr/bin/php /var/www/nextcloud/occ app:install onlyoffice
+/usr/bin/php /var/www/nextcloud/occ app:install richdocuments
+/usr/bin/php /var/www/nextcloud/occ app:install richdocumentscode
