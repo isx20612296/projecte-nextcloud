@@ -58,6 +58,8 @@ echo -e "\t \t \e[34m Apliquem configuració del Nextcloud \e[0m"
 chmod +x /opt/docker/occ_apps.sh
 su www-data -s /bin/bash -c '/opt/docker/occ_apps.sh'
 cp /opt/docker/config.php /var/www/nextcloud/config/config.php
+cp /opt/docker/cli_php.ini /etc/php/7.4/cli/php.ini
+cp /opt/docker/apache_php.ini /etc/php/7.4/apache2/php.ini
 echo -e "\t \t \e[34m Procés d'enjagada i configuració completat \e[0m"
 sleep 1
 /bin/bash
