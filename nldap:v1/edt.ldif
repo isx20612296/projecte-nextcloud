@@ -1,0 +1,282 @@
+# Llistat total de la organitzacio dc=edt,dc=org
+# @edt 2016
+# M06-ASO
+# -----------------------------------------------
+
+dn: dc=edt,dc=nextcloud,dc=org
+dc: nextcloud
+description: Base de dades LDAP dels membres de Nextcloud
+objectClass: dcObject
+objectClass: organization
+o: edt.nextcloud.org
+
+dn: ou=users,dc=edt,dc=nextcloud,dc=org
+ou: users
+description: Usuaris de Nextcloud
+objectclass: organizationalunit
+
+dn: ou=groups,dc=edt,dc=nextcloud,dc=org
+ou: groups
+description: Grups del Nextcloud
+objectclass: organizationalunit
+# ---------- Grups ------------------------------
+
+dn: cn=admin,ou=groups,dc=edt,dc=nextcloud,dc=org
+cn: admin
+gidNumber: 600
+description: Grup d'administradors
+memberUid: carles
+memberUid: andreu
+objectclass: posixGroup
+
+dn: cn=students,ou=groups,dc=edt,dc=nextcloud,dc=org
+cn: students
+gidNumber: 601
+description: Grup d'alumnes
+memberUid: mark
+memberUid: christian
+memberUid: diego
+memberUid: javier
+memberUid: roberto
+memberUid: alejandro
+memberUid: mati
+memberUid: carles
+memberUid: andreu
+memberUid: hicham
+objectclass: posixGroup
+
+dn: cn=teachers,ou=groups,dc=edt,dc=nextcloud,dc=org
+cn: teachers
+gidNumber: 602
+description: Grup de professors
+memberUid: eduard
+memberUid: maribel
+memberUid: ainhoa
+memberUid: montse
+memberUid: victor
+objectclass: posixGroup
+
+# ---------- Usuaris ----------------------------
+
+# ---------- Professors --------------------------
+dn: uid=eduard,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Eduard
+sn: Canet
+ou: users
+uid: eduard
+uidNumber: 5201
+gidNumber: 602
+homeDirectory: /tmp/home/eduard
+userPassword: {SSHA}3ay6imMe+ZegVnIm/eLcp68kHdYdVwE2
+
+dn: uid=maribel,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Maribel
+sn: Espada
+ou: users
+uid: maribel
+uidNumber: 5202
+gidNumber: 602
+homeDirectory: /tmp/home/maribel
+userPassword: {SSHA}Nex0UFx/Y2wX+NgE3fjBMLVkyC79BQzb
+
+dn: uid=ainhoa,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Ainhoa
+sn: Zaldua
+ou: users
+uid: ainhoa
+uidNumber: 5203
+gidNumber: 602
+homeDirectory: /tmp/home/ainhoa
+userPassword: {SSHA}fGsKs/q1MQA2EqKthTbw6xJBmkTRmzwz
+
+dn: uid=montse,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Montserrat
+sn: Soler
+ou: users
+uid: montse
+uidNumber: 5204
+gidNumber: 602
+homeDirectory: /tmp/home/montse
+userPassword: {SSHA}QM6iJYP5tyQG9CblCXn075xDqVCdGzgj
+
+dn: uid=victor,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Victor
+sn: Hernandez
+ou: users
+uid: victor
+uidNumber: 5205
+gidNumber: 602
+homeDirectory: /tmp/home/victor
+userPassword: {SSHA}1sQ26hIJSAvSdDsydF08thZdZ8hb9wCs
+
+# --------- Alumnes --------------------------------
+
+dn: uid=mark,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Mark Stanley
+sn: Santiago
+ou: users
+uid: mark
+uidNumber: 5001
+gidNumber: 601
+homeDirectory: /tmp/home/mark
+userPassword: {SSHA}B1lsaE5C2yv+7Vl39zemCQvw/3LtQOMt
+
+dn: uid=diego,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Diego
+sn: Sanchez
+ou: users
+uid: diego
+uidNumber: 5002
+gidNumber: 601
+homeDirectory: /tmp/home/diego
+userPassword: {SSHA}CsiobfNtgVvIdGL2eWqHXzJQIYapZtyo
+
+dn: uid=christian,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Christian
+sn: Manalo
+ou: users
+uid: christian
+uidNumber: 5003
+gidNumber: 601
+homeDirectory: /tmp/home/christian
+userPassword: {SSHA}XjtkWPvn62qwO/tIGb0Nc95MD9hTZbb5
+
+dn: uid=javier,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Javier
+sn: Moyano
+ou: users
+uid: javier
+uidNumber: 5004
+gidNumber: 601
+homeDirectory: /tmp/home/javier
+userPassword: {SSHA}3TlcUv1QE3XUkVlaekduKlpq4ddkmHuH
+
+
+dn: uid=roberto,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Roberto
+sn: Martinez
+ou: users
+uid: roberto
+uidNumber: 5005
+gidNumber: 601
+homeDirectory: /tmp/home/roberto
+userPassword: {SSHA}nodW4zJmMNfi6njWkrFCE1HZIqR8cyD5
+
+dn: uid=alejandro,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Alejandro
+sn: Lopez
+ou: users
+uid: alejandro
+uidNumber: 5006
+gidNumber: 601
+homeDirectory: /tmp/home/alejandro
+userPassword: {SSHA}6Ef6j2hH8U+GLVHG+Siexlbj5VnzIYtH
+
+dn: uid=mati,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Mati
+sn: Vizcaino
+ou: users
+uid: mati
+uidNumber: 5007
+gidNumber: 601
+homeDirectory: /tmp/home/mati
+userPassword: {SSHA}QiCRmS9iU5Z67nXtzbVFpAsWisKmJ1At
+
+dn: uid=carles,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Carles
+sn: Grillo
+ou: users
+uid: carles
+uidNumber: 5008
+gidNumber: 601
+homeDirectory: /tmp/home/carles
+userPassword: {SSHA}zdASMe7WidzMkbuAZQMj4W0O88+nILTa 
+
+dn: uid=andreu,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Andreu
+sn: Pasalamar
+ou: users
+uid: andreu
+uidNumber: 5009
+gidNumber: 601
+homeDirectory: /tmp/home/andreu
+userPassword: {SSHA}4vcjF151+QwLeKBkkxgclmVd+vWgGIWk
+
+dn: uid=hicham,ou=users,dc=edt,dc=nextcloud,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Hicham
+sn: Varo
+ou: users
+uid: hicham
+uidNumber: 5010
+gidNumber: 601
+homeDirectory: /tmp/home/hicham
+userPassword: {SSHA}IqzuxhEX11a3PYofJPXOuOkVd6S/G4YN
+
+
+# ---------- Grups ------------------------------
+
+dn: cn=admin,ou=groups,dc=edt,dc=nextcloud,dc=org
+cn: admin
+gidNumber: 600
+description: Grup d'administradors
+memberUid: carles
+memberUid: andreu
+objectclass: posixGroup
+
+dn: cn=students,ou=groups,dc=edt,dc=nextcloud,dc=org
+cn: students
+gidNumber: 601
+description: Grup d'alumnes
+memberUid: mark
+memberUid: christian
+memberUid: diego
+memberUid: javier
+memberUid: roberto
+memberUid: alejandro
+memberUid: mati
+memberUid: carles
+memberUid: andreu
+memberUid: hicham
+objectclass: posixGroup
+
+dn: cn=teachers,ou=groups,dc=edt,dc=nextcloud,dc=org
+cn: teachers
+gidNumber: 602
+description: Grup de professors
+memberUid: eduard
+memberUid: maribel
+memberUid: ainhoa
+memberUid: montse
+memberUid: victor
+objectclass: posixGroup
+

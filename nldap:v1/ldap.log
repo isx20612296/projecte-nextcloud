@@ -1,0 +1,386 @@
+ldap_url_parse_ext(ldaps://ldap.edt.org)
+ldap_create
+ldap_url_parse_ext(ldaps://ldap.edt.org:636/??base)
+ldap_sasl_bind
+ldap_send_initial_request
+ldap_new_connection 1 1 0
+ldap_int_open_connection
+ldap_connect_to_host: TCP ldap.edt.org:636
+ldap_new_socket: 3
+ldap_prepare_socket: 3
+ldap_connect_to_host: Trying 172.17.0.2:636
+ldap_pvt_connect: fd: 3 tm: -1 async: 0
+attempting to connect: 
+connect success
+TLS: loaded CA certificate file /var/tmp/m11/tls18/tls18:ldaps/cacert.pem.
+tls_write: want=187, written=187
+  0000:  16 03 01 00 b6 01 00 00  b2 03 03 4b 04 b0 3d 8b   ...........K..=.  
+  0010:  b3 82 93 37 da 9d c2 14  dc 86 74 85 7c 8d a6 ba   ...7......t.|...  
+  0020:  96 19 65 6c 13 67 a9 c6  a4 1b 5d 00 00 4c c0 0a   ..el.g....]..L..  
+  0030:  c0 09 c0 13 c0 14 c0 08  c0 12 c0 07 c0 11 00 33   ...............3  
+  0040:  00 32 00 45 00 44 00 39  00 38 00 88 00 87 00 16   .2.E.D.9.8......  
+  0050:  00 13 00 66 c0 04 c0 0e  c0 05 c0 0f c0 03 c0 0d   ...f............  
+  0060:  c0 02 c0 0c 00 2f 00 41  00 35 00 84 00 96 00 0a   ...../.A.5......  
+  0070:  00 05 00 04 00 15 00 12  00 09 01 00 00 3d ff 01   .............=..  
+  0080:  00 01 00 00 0a 00 0a 00  08 00 1d 00 17 00 18 00   ................  
+  0090:  19 00 0b 00 02 01 00 00  0d 00 20 00 1e 04 03 05   .......... .....  
+  00a0:  03 06 03 02 03 08 04 08  05 08 06 04 01 05 01 06   ................  
+  00b0:  01 02 01 04 02 05 02 06  02 02 02                  ...........       
+tls_read: want=5, got=5
+  0000:  16 03 03 09 a6                                     .....             
+tls_read: want=2470, got=2470
+  0000:  02 00 00 53 03 03 2b 33  19 e2 95 37 f2 b1 7c ef   ...S..+3...7..|.  
+  0010:  e8 36 8a 7a 8f fd d7 6e  95 50 c5 4e 41 0d 93 bd   .6.z...n.P.NA...  
+  0020:  14 85 28 c4 f0 e2 20 00  13 da b1 0d 5a cd eb 3b   ..(... .....Z..;  
+  0030:  10 00 61 fc f1 61 9c 59  ac cb 23 d0 cd 52 3b 67   ..a..a.Y..#..R;g  
+  0040:  54 07 77 5c c0 f5 13 c0  13 00 00 0b ff 01 00 01   T.w\............  
+  0050:  00 00 0b 00 02 01 00 0b  00 08 1b 00 08 18 00 04   ................  
+  0060:  10 30 82 04 0c 30 82 02  f4 a0 03 02 01 02 02 09   .0...0..........  
+  0070:  00 c1 5d a3 8e 7b 1f 62  d4 30 0d 06 09 2a 86 48   ..]..{.b.0...*.H  
+  0080:  86 f7 0d 01 01 0b 05 00  30 81 93 31 0b 30 09 06   ........0..1.0..  
+  0090:  03 55 04 06 13 02 63 61  31 12 30 10 06 03 55 04   .U....ca1.0...U.  
+  00a0:  08 0c 09 62 61 72 63 65  6c 6f 6e 61 31 12 30 10   ...barcelona1.0.  
+  00b0:  06 03 55 04 07 0c 09 62  61 72 63 65 6c 6f 6e 61   ..U....barcelona  
+  00c0:  31 0c 30 0a 06 03 55 04  0a 0c 03 65 64 74 31 14   1.0...U....edt1.  
+  00d0:  30 12 06 03 55 04 0b 0c  0b 69 6e 66 6f 72 6d 61   0...U....informa  
+  00e0:  74 69 63 61 31 18 30 16  06 03 55 04 03 0c 0f 56   tica1.0...U....V  
+  00f0:  65 72 69 74 61 74 41 62  73 6f 6c 75 74 61 31 1e   eritatAbsoluta1.  
+  0100:  30 1c 06 09 2a 86 48 86  f7 0d 01 09 01 16 0f 76   0...*.H........v  
+  0110:  65 72 69 74 61 74 40 65  64 74 2e 6f 72 67 30 1e   eritat@edt.org0.  
+  0120:  17 0d 31 39 30 33 32 38  31 37 34 31 34 30 5a 17   ..190328174140Z.  
+  0130:  0d 32 39 30 33 32 35 31  37 34 31 34 30 5a 30 81   .290325174140Z0.  
+  0140:  8d 31 0b 30 09 06 03 55  04 06 13 02 63 61 31 12   .1.0...U....ca1.  
+  0150:  30 10 06 03 55 04 08 0c  09 62 61 72 63 65 6c 6f   0...U....barcelo  
+  0160:  6e 61 31 12 30 10 06 03  55 04 07 0c 09 62 61 72   na1.0...U....bar  
+  0170:  63 65 6c 6f 6e 61 31 0c  30 0a 06 03 55 04 0a 0c   celona1.0...U...  
+  0180:  03 65 64 74 31 14 30 12  06 03 55 04 0b 0c 0b 69   .edt1.0...U....i  
+  0190:  6e 66 6f 72 6d 61 74 69  63 61 31 15 30 13 06 03   nformatica1.0...  
+  01a0:  55 04 03 0c 0c 6c 64 61  70 2e 65 64 74 2e 6f 72   U....ldap.edt.or  
+  01b0:  67 31 1b 30 19 06 09 2a  86 48 86 f7 0d 01 09 01   g1.0...*.H......  
+  01c0:  16 0c 6c 64 61 70 40 65  64 74 2e 6f 72 67 30 82   ..ldap@edt.org0.  
+  01d0:  01 22 30 0d 06 09 2a 86  48 86 f7 0d 01 01 01 05   ."0...*.H.......  
+  01e0:  00 03 82 01 0f 00 30 82  01 0a 02 82 01 01 00 92   ......0.........  
+  01f0:  de 74 b9 5c 0f c8 5d ff  d1 a3 66 ef 49 42 e4 4f   .t.\..]...f.IB.O  
+  0200:  37 d7 5c c0 72 e2 b8 90  a2 38 85 df 47 24 cd a9   7.\.r....8..G$..  
+  0210:  8e 24 76 3b 60 98 9d 6e  b5 73 f0 6a ae 2b 90 02   .$v;`..n.s.j.+..  
+  0220:  fb 4d 36 0b bb b7 cd ca  64 d6 c5 3b f4 af 77 7f   .M6.....d..;..w.  
+  0230:  9f 0c 97 8f ed 00 c6 32  9c 6c 90 1d c7 6b fd 87   .......2.l...k..  
+  0240:  78 15 ea 4e dd 28 f0 b3  53 f0 c8 c2 c3 44 02 69   x..N.(..S....D.i  
+  0250:  91 37 fa 4d af da 67 42  0a af 4a a1 c2 74 33 e1   .7.M..gB..J..t3.  
+  0260:  9b b1 3f d1 0c 0b 3b 35  9c 98 14 fd d1 f2 76 e8   ..?...;5......v.  
+  0270:  1d 86 b8 a2 da ca 69 11  04 72 7d 74 4f b3 45 d6   ......i..r}tO.E.  
+  0280:  44 0e 5c 5d 25 e6 51 27  5d b4 9b 7f 8e 4c c2 13   D.\]%.Q']....L..  
+  0290:  5f 11 53 7d 2f 44 ed 64  e1 e7 28 0a b9 48 62 3d   _.S}/D.d..(..Hb=  
+  02a0:  42 28 0e 58 3b 5d a9 8e  61 69 2f 2b c4 0d 19 4c   B(.X;]..ai/+...L  
+  02b0:  33 bd aa 38 e4 0b bf 60  58 04 eb d0 51 a4 8a e9   3..8...`X...Q...  
+  02c0:  c1 eb 0a 4a 93 f6 aa 15  ee af ed 68 10 78 94 19   ...J.......h.x..  
+  02d0:  ff 4b 2c 6e 5b 96 74 41  78 6e ca 68 4c 7b fb 1d   .K,n[.tAxn.hL{..  
+  02e0:  10 6f 4b 8b d0 0c 10 d4  1e 2d 43 a1 e6 30 5d 02   .oK......-C..0].  
+  02f0:  03 01 00 01 a3 67 30 65  30 09 06 03 55 1d 13 04   .....g0e0...U...  
+  0300:  02 30 00 30 13 06 03 55  1d 25 04 0c 30 0a 06 08   .0.0...U.%..0...  
+  0310:  2b 06 01 05 05 07 03 01  30 43 06 03 55 1d 11 04   +.......0C..U...  
+  0320:  3c 30 3a 87 04 ac 11 00  02 87 04 7f 00 00 01 81   <0:.............  
+  0330:  0c 6c 64 61 70 40 65 64  74 2e 6f 72 67 86 1e 6c   .ldap@edt.org..l  
+  0340:  64 61 70 73 3a 2f 2f 6d  79 73 65 63 75 72 65 6c   daps://mysecurel  
+  0350:  64 61 70 73 65 72 76 65  72 2e 6f 72 67 30 0d 06   dapserver.org0..  
+  0360:  09 2a 86 48 86 f7 0d 01  01 0b 05 00 03 82 01 01   .*.H............  
+  0370:  00 15 bd e6 be 6c 97 74  fb 9d 9a 1b 4f 68 be af   .....l.t....Oh..  
+  0380:  36 bd 0d 46 62 13 a2 51  6b 1f 91 20 e2 fc 98 61   6..Fb..Qk.. ...a  
+  0390:  43 4d 72 d1 fc 59 cb b2  ef ad 4b 31 cf d2 73 56   CMr..Y....K1..sV  
+  03a0:  3b de e6 ba 8f 0e 92 a0  aa 17 d6 02 f6 6d 75 42   ;............muB  
+  03b0:  79 07 e0 04 8e 5e e2 bb  02 9e bc 12 b9 77 ed 1b   y....^.......w..  
+  03c0:  05 56 94 ae 50 0f df ab  19 c6 36 c9 b5 28 50 e2   .V..P.....6..(P.  
+  03d0:  bc 5e ef 91 cd db 55 36  1a b8 e3 b3 8c 10 28 0a   .^....U6......(.  
+  03e0:  62 a1 ad 3a 6d 4c e2 5c  a6 e6 83 1f b5 e0 76 89   b..:mL.\......v.  
+  03f0:  37 a2 6f 8a f7 ea 71 ed  b0 a2 f0 b6 d5 bc bd 18   7.o...q.........  
+  0400:  e9 0f 6e d5 c7 a2 e8 46  c6 50 34 a6 1d 91 d0 20   ..n....F.P4....   
+  0410:  38 7f 99 99 48 0c fa 41  36 ef a8 da 96 c0 0b bb   8...H..A6.......  
+  0420:  e0 6a 27 e5 8e 8b ad 2e  02 dc ad c4 f8 89 99 94   .j'.............  
+  0430:  23 c8 19 25 3b 72 d9 32  06 5c 57 43 11 4e 17 0f   #..%;r.2.\WC.N..  
+  0440:  17 8f 74 f0 8a 0c fb 09  1c ef 45 be a7 25 27 9b   ..t.......E..%'.  
+  0450:  d0 2e 3c 0c 11 ea 5e 32  7d 51 c7 3d 5d f3 e9 2a   ..<...^2}Q.=]..*  
+  0460:  7c ae e0 0c 7c 3c c3 e1  26 91 22 bb 93 d6 c2 55   |...|<..&."....U  
+  0470:  78 00 04 02 30 82 03 fe  30 82 02 e6 a0 03 02 01   x...0...0.......  
+  0480:  02 02 09 00 b2 29 33 db  cb f3 92 a3 30 0d 06 09   .....)3.....0...  
+  0490:  2a 86 48 86 f7 0d 01 01  0b 05 00 30 81 93 31 0b   *.H........0..1.  
+  04a0:  30 09 06 03 55 04 06 13  02 63 61 31 12 30 10 06   0...U....ca1.0..  
+  04b0:  03 55 04 08 0c 09 62 61  72 63 65 6c 6f 6e 61 31   .U....barcelona1  
+  04c0:  12 30 10 06 03 55 04 07  0c 09 62 61 72 63 65 6c   .0...U....barcel  
+  04d0:  6f 6e 61 31 0c 30 0a 06  03 55 04 0a 0c 03 65 64   ona1.0...U....ed  
+  04e0:  74 31 14 30 12 06 03 55  04 0b 0c 0b 69 6e 66 6f   t1.0...U....info  
+  04f0:  72 6d 61 74 69 63 61 31  18 30 16 06 03 55 04 03   rmatica1.0...U..  
+  0500:  0c 0f 56 65 72 69 74 61  74 41 62 73 6f 6c 75 74   ..VeritatAbsolut  
+  0510:  61 31 1e 30 1c 06 09 2a  86 48 86 f7 0d 01 09 01   a1.0...*.H......  
+  0520:  16 0f 76 65 72 69 74 61  74 40 65 64 74 2e 6f 72   ..veritat@edt.or  
+  0530:  67 30 1e 17 0d 31 39 30  33 32 32 31 30 33 39 35   g0...19032210395  
+  0540:  37 5a 17 0d 32 39 30 33  31 39 31 30 33 39 35 37   7Z..290319103957  
+  0550:  5a 30 81 93 31 0b 30 09  06 03 55 04 06 13 02 63   Z0..1.0...U....c  
+  0560:  61 31 12 30 10 06 03 55  04 08 0c 09 62 61 72 63   a1.0...U....barc  
+  0570:  65 6c 6f 6e 61 31 12 30  10 06 03 55 04 07 0c 09   elona1.0...U....  
+  0580:  62 61 72 63 65 6c 6f 6e  61 31 0c 30 0a 06 03 55   barcelona1.0...U  
+  0590:  04 0a 0c 03 65 64 74 31  14 30 12 06 03 55 04 0b   ....edt1.0...U..  
+  05a0:  0c 0b 69 6e 66 6f 72 6d  61 74 69 63 61 31 18 30   ..informatica1.0  
+  05b0:  16 06 03 55 04 03 0c 0f  56 65 72 69 74 61 74 41   ...U....VeritatA  
+  05c0:  62 73 6f 6c 75 74 61 31  1e 30 1c 06 09 2a 86 48   bsoluta1.0...*.H  
+  05d0:  86 f7 0d 01 09 01 16 0f  76 65 72 69 74 61 74 40   ........veritat@  
+  05e0:  65 64 74 2e 6f 72 67 30  82 01 22 30 0d 06 09 2a   edt.org0.."0...*  
+  05f0:  86 48 86 f7 0d 01 01 01  05 00 03 82 01 0f 00 30   .H.............0  
+  0600:  82 01 0a 02 82 01 01 00  f4 d1 a9 dc 4c 55 d9 d5   ............LU..  
+  0610:  2c b1 19 c5 7b ad ed e0  b8 f2 6f 5f 4d f6 cf ac   ,...{.....o_M...  
+  0620:  ca 4d 67 a9 bb 08 66 8b  73 21 61 d3 e2 e1 a1 53   .Mg...f.s!a....S  
+  0630:  a7 45 4c 23 a8 06 e3 57  5d 12 c8 fa 1e c8 d7 12   .EL#...W].......  
+  0640:  0f 8f fc dd 3f f2 f9 a8  24 fb 90 83 d1 a9 37 cc   ....?...$.....7.  
+  0650:  0e 7c 59 d1 ea 12 d9 ee  ad e8 42 5e f1 b4 9d a2   .|Y.......B^....  
+  0660:  3a 46 3f 00 54 be 7f af  fa c9 7e 4c f0 61 97 8d   :F?.T.....~L.a..  
+  0670:  96 d5 25 99 bc 54 36 a3  07 79 5f 95 00 01 3d 22   ..%..T6..y_...="  
+  0680:  63 3a 34 0e c2 41 2f c2  88 ae 5c 7f 6a 81 b2 ff   c:4..A/...\.j...  
+  0690:  ad 05 b4 dc 4e 48 2e 95  f7 04 46 8f fe 12 2c ef   ....NH....F...,.  
+  06a0:  a0 01 dd 44 40 d6 44 2b  f6 36 fd 60 80 e5 c5 a7   ...D@.D+.6.`....  
+  06b0:  b9 7d 8d 2d 3d 33 e0 6d  c5 9e d3 8d a4 3e 23 ec   .}.-=3.m.....>#.  
+  06c0:  43 17 6c b4 36 56 75 10  95 7a c5 71 00 97 89 25   C.l.6Vu..z.q...%  
+  06d0:  55 0d 61 78 cf da 7a 64  cf 10 5c bc a2 62 3f b9   U.ax..zd..\..b?.  
+  06e0:  04 db 8d b6 d4 b2 09 50  10 07 2a 08 16 bb 30 5a   .......P..*...0Z  
+  06f0:  65 39 2f d9 d3 e9 90 e8  ce 54 1a 35 dd d6 a1 d5   e9/......T.5....  
+  0700:  f2 83 59 af bb 1f ae 03  02 03 01 00 01 a3 53 30   ..Y...........S0  
+  0710:  51 30 1d 06 03 55 1d 0e  04 16 04 14 c7 58 f2 1c   Q0...U.......X..  
+  0720:  98 6e 50 77 c6 7c 4d 2c  ad 39 62 39 7e db 72 83   .nPw.|M,.9b9~.r.  
+  0730:  30 1f 06 03 55 1d 23 04  18 30 16 80 14 c7 58 f2   0...U.#..0....X.  
+  0740:  1c 98 6e 50 77 c6 7c 4d  2c ad 39 62 39 7e db 72   ..nPw.|M,.9b9~.r  
+  0750:  83 30 0f 06 03 55 1d 13  01 01 ff 04 05 30 03 01   .0...U.......0..  
+  0760:  01 ff 30 0d 06 09 2a 86  48 86 f7 0d 01 01 0b 05   ..0...*.H.......  
+  0770:  00 03 82 01 01 00 92 23  1d b7 d1 94 ca db 96 d6   .......#........  
+  0780:  5f 74 4e 6f 06 be 8c 29  14 f7 72 e8 0e 5f 08 02   _tNo...)..r.._..  
+  0790:  99 fe 73 26 e6 9c 8c 91  20 5e 2c 36 d5 58 b1 ce   ..s&.... ^,6.X..  
+  07a0:  ab d0 82 42 29 38 a3 ef  f0 0b 2a 28 dd a1 99 33   ...B)8....*(...3  
+  07b0:  b9 73 e9 0c 7a 92 54 83  ad 68 a2 19 78 69 7e f9   .s..z.T..h..xi~.  
+  07c0:  46 db 45 ce 16 6c 12 a2  17 b7 9b 0b b1 3c 93 81   F.E..l.......<..  
+  07d0:  97 3b 99 61 15 9e 51 7e  6d 3d 74 da 43 85 ce 0d   .;.a..Q~m=t.C...  
+  07e0:  a4 23 77 6f 9c c6 78 0c  f5 3a 63 81 72 33 2a 3f   .#wo..x..:c.r3*?  
+  07f0:  a5 5a 25 fa ec a5 9a 6e  bf 6f 99 18 7e 7d 1d de   .Z%....n.o..~}..  
+  0800:  b0 7c d1 40 5e fb e2 d8  1f 91 d3 00 63 c7 c7 5e   .|.@^.......c..^  
+  0810:  51 eb bc 64 51 2a 3b 1a  25 59 5a 71 e5 42 f1 ec   Q..dQ*;.%YZq.B..  
+  0820:  dd f0 41 d2 6e d5 01 eb  c1 fd 68 c2 39 16 7d 7d   ..A.n.....h.9.}}  
+  0830:  c7 b4 f3 cd 98 23 ec db  be 72 cb 90 00 e8 1f 46   .....#...r.....F  
+  0840:  c8 ac 3b 48 24 ed 52 7d  aa a3 04 e6 28 90 26 91   ..;H$.R}....(.&.  
+  0850:  e7 51 32 13 77 4e 3f e2  23 d5 1c 88 86 e0 24 d8   .Q2.wN?.#.....$.  
+  0860:  c0 be d7 fa 2e 82 73 ef  aa 3e 5c e4 c6 7c ce 1b   ......s..>\..|..  
+  0870:  db 33 b5 13 a5 e6 0c 00  01 28 03 00 1d 20 60 a0   .3.......(... `.  
+  0880:  05 f1 fd ee 03 88 65 ca  c0 42 69 1d 4c 32 64 3b   ......e..Bi.L2d;  
+  0890:  69 6c 19 96 a8 9e c4 a0  74 ec eb 4a 4e 47 04 01   il......t..JNG..  
+  08a0:  01 00 56 25 4c 37 76 13  65 ca 14 41 3f d2 38 47   ..V%L7v.e..A?.8G  
+  08b0:  30 46 ac 8f 0b ab 9c 8d  94 3c 84 31 71 97 4e ee   0F.......<.1q.N.  
+  08c0:  c6 9b 25 96 c7 29 2c e6  33 79 86 ab a6 e6 6f 3a   ..%..),.3y....o:  
+  08d0:  4c 6a 73 dc 09 ec d7 ca  e5 49 b9 92 66 b6 13 06   Ljs......I..f...  
+  08e0:  1e c0 7d 7f e9 9d 28 e8  64 ba bc f7 3f 28 00 e1   ..}...(.d...?(..  
+  08f0:  c1 a2 1c aa 03 c1 4b 19  28 c2 08 68 fe 54 ef 91   ......K.(..h.T..  
+  0900:  39 0d fe 90 d0 59 53 d1  42 07 9a 7c 47 e6 f3 7a   9....YS.B..|G..z  
+  0910:  a4 3e 01 32 fb 26 70 e6  92 5d 43 ed 16 a2 c6 d8   .>.2.&p..]C.....  
+  0920:  2e f4 aa 86 8e d3 bf 11  11 ec 34 9b 35 c4 6e 5e   ..........4.5.n^  
+  0930:  d1 44 cf c0 c8 10 07 2c  bf 53 34 f6 6e 38 60 f2   .D.....,.S4.n8`.  
+  0940:  9f a1 13 f9 c6 d1 e3 fd  28 9e 85 ae cf 29 51 67   ........(....)Qg  
+  0950:  15 97 81 e1 29 6b 5d 49  8e 12 38 45 1c 1c 27 88   ....)k]I..8E..'.  
+  0960:  a6 f9 cc d4 e8 9d d9 9d  2a d3 4a 39 77 30 69 df   ........*.J9w0i.  
+  0970:  22 7b c4 63 72 7a eb ac  92 5b 0c df ae 64 b4 d2   "{.crz...[...d..  
+  0980:  45 a5 3a f5 6e 0a f0 13  66 58 92 7e 32 88 4f e6   E.:.n...fX.~2.O.  
+  0990:  17 df fd 0e c8 c9 25 99  3c 6b 59 50 66 fa a5 93   ......%.<kYPf...  
+  09a0:  73 8b 0e 00 00 00                                  s.....            
+TLS: certificate [E=ldap@edt.org,CN=ldap.edt.org,OU=informatica,O=edt,L=barcelona,ST=barcelona,C=ca] is valid
+tls_write: want=117, written=117
+  0000:  16 03 03 00 25 10 00 00  21 20 c5 3b f6 c9 60 e0   ....%...! .;..`.  
+  0010:  f6 4d b3 2c 46 0b 55 66  10 ee b5 73 da ae f7 0b   .M.,F.Uf...s....  
+  0020:  b4 a1 6b c7 78 00 06 0a  7e 32 14 03 03 00 01 01   ..k.x...~2......  
+  0030:  16 03 03 00 40 a0 71 0f  6f 39 37 df d4 8b 40 6a   ....@.q.o97...@j  
+  0040:  c1 58 83 28 3e 3f 1f b6  d4 ff e1 da 1e c2 c6 78   .X.(>?.........x  
+  0050:  4d c3 e1 6d da 5f 10 d7  f5 48 90 2b aa ee d1 35   M..m._...H.+...5  
+  0060:  57 09 f8 bb 0e 57 ba 0c  1d b1 16 fd 54 87 7f a3   W....W......T...  
+  0070:  20 8a 3a f8 82                                      .:..             
+tls_read: want=5, got=5
+  0000:  14 03 03 00 01                                     .....             
+tls_read: want=1, got=1
+  0000:  01                                                 .                 
+tls_read: want=5, got=5
+  0000:  16 03 03 00 40                                     ....@             
+tls_read: want=64, got=64
+  0000:  1d 7d 05 a2 35 37 36 96  5e 57 a3 47 be 67 9d f3   .}..576.^W.G.g..  
+  0010:  ff 59 95 23 82 2a b3 ea  60 75 c9 51 0f 27 a7 81   .Y.#.*..`u.Q.'..  
+  0020:  45 ae 3d db 0a d0 20 f6  ef b6 1e 78 8e c2 7b 1b   E.=... ....x..{.  
+  0030:  19 70 34 22 38 cd a6 6e  2c 42 26 e3 07 b5 40 f0   .p4"8..n,B&...@.  
+TLS certificate verification: subject: E=ldap@edt.org,CN=ldap.edt.org,OU=informatica,O=edt,L=barcelona,ST=barcelona,C=ca, issuer: E=veritat@edt.org,CN=VeritatAbsoluta,OU=informatica,O=edt,L=barcelona,ST=barcelona,C=ca, cipher: AES-128, security level: high, secret key bits: 128, total key bits: 128, cache hits: 0, cache misses: 0, cache not reusable: 0
+ldap_open_defconn: successful
+ldap_send_server_request
+ber_scanf fmt ({it) ber:
+ber_scanf fmt ({i) ber:
+ber_flush2: 14 bytes to sd 3
+tls_write: want=69, written=69
+  0000:  17 03 03 00 40 8f ca 08  0f f6 c0 49 91 26 1d 85   ....@......I.&..  
+  0010:  de c9 1c b4 5d 05 3c e5  a9 ae 32 71 86 69 fb 4b   ....].<...2q.i.K  
+  0020:  27 dd cd c1 92 b6 0e db  b2 9b 33 e9 20 cd 22 64   '.........3. ."d  
+  0030:  25 0b 41 7d 3b 43 82 85  6d bb 78 1e 0a 12 69 a4   %.A};C..m.x...i.  
+  0040:  71 37 0c ad c6                                     q7...             
+ldap_write: want=14, written=14
+  0000:  30 0c 02 01 01 60 07 02  01 03 04 00 80 00         0....`........    
+ldap_result ld 0x392e37d190 msgid 1
+wait4msg ld 0x392e37d190 msgid 1 (infinite timeout)
+wait4msg continue ld 0x392e37d190 msgid 1 all 1
+** ld 0x392e37d190 Connections:
+* host: ldap.edt.org  port: 636  (default)
+  refcnt: 2  status: Connected
+  last used: Thu Mar 28 19:03:22 2019
+
+
+** ld 0x392e37d190 Outstanding Requests:
+ * msgid 1,  origid 1, status InProgress
+   outstanding referrals 0, parent count 0
+  ld 0x392e37d190 request count 1 (abandoned 0)
+** ld 0x392e37d190 Response Queue:
+   Empty
+  ld 0x392e37d190 response count 0
+ldap_chkResponseList ld 0x392e37d190 msgid 1 all 1
+ldap_chkResponseList returns ld 0x392e37d190 NULL
+ldap_int_select
+read1msg: ld 0x392e37d190 msgid 1 all 1
+ber_get_next
+tls_read: want=5, got=5
+  0000:  17 03 03 00 40                                     ....@             
+tls_read: want=64, got=64
+  0000:  8f 56 09 38 f1 eb 93 34  71 c0 0c 32 e1 ea 92 18   .V.8...4q..2....  
+  0010:  90 59 c1 e3 b8 87 06 48  bb d9 af 1b cc f5 c8 5d   .Y.....H.......]  
+  0020:  50 2b 54 15 35 60 78 f1  56 19 5f a0 a4 5f 2d 4e   P+T.5`x.V._.._-N  
+  0030:  40 2d 95 83 fd 3b fa bb  b3 34 ac 1a e3 c8 c6 ab   @-...;...4......  
+ldap_read: want=8, got=8
+  0000:  30 0c 02 01 01 61 07 0a                            0....a..          
+ldap_read: want=6, got=6
+  0000:  01 00 04 00 04 00                                  ......            
+ber_get_next: tag 0x30 len 12 contents:
+read1msg: ld 0x392e37d190 msgid 1 message type bind
+ber_scanf fmt ({eAA) ber:
+read1msg: ld 0x392e37d190 0 new referrals
+read1msg:  mark request completed, ld 0x392e37d190 msgid 1
+request done: ld 0x392e37d190 msgid 1
+res_errno: 0, res_error: <>, res_matched: <>
+ldap_free_request (origid 1, msgid 1)
+ldap_parse_result
+ber_scanf fmt ({iAA) ber:
+ber_scanf fmt (}) ber:
+ldap_msgfree
+ldap_search_ext
+put_filter: "(objectclass=*)"
+put_filter: simple
+put_simple_filter: "objectclass=*"
+ldap_send_initial_request
+ldap_send_server_request
+ber_scanf fmt ({it) ber:
+ber_scanf fmt ({) ber:
+ber_flush2: 56 bytes to sd 3
+tls_write: want=101, written=101
+  0000:  17 03 03 00 60 94 6c 83  5d 17 1b f3 34 0f 51 24   ....`.l.]...4.Q$  
+  0010:  41 57 e5 92 a6 17 52 b0  6c 5c 34 2f 4c 64 68 d5   AW....R.l\4/Ldh.  
+  0020:  71 ae 05 84 d0 f7 4e 55  a1 ce fb 18 0f c8 48 10   q.....NU......H.  
+  0030:  8b e9 60 31 57 cd 01 a4  be 8d 32 94 b0 53 31 f2   ..`1W.....2..S1.  
+  0040:  26 48 e6 cd 1d 4f 72 60  f6 8b 41 89 78 85 c4 4f   &H...Or`..A.x..O  
+  0050:  bc a6 55 e1 aa b6 7a 56  eb e0 21 76 e8 f8 13 46   ..U...zV..!v...F  
+  0060:  0e 69 8e 59 c7                                     .i.Y.             
+ldap_write: want=56, written=56
+  0000:  30 36 02 01 02 63 31 04  0d 64 63 3d 65 64 74 2c   06...c1..dc=edt,  
+  0010:  64 63 3d 6f 72 67 0a 01  00 0a 01 00 02 01 00 02   dc=org..........  
+  0020:  01 00 01 01 00 87 0b 6f  62 6a 65 63 74 63 6c 61   .......objectcla  
+  0030:  73 73 30 04 04 02 64 6e                            ss0...dn          
+ldap_result ld 0x392e37d190 msgid -1
+wait4msg ld 0x392e37d190 msgid -1 (infinite timeout)
+wait4msg continue ld 0x392e37d190 msgid -1 all 0
+** ld 0x392e37d190 Connections:
+* host: ldap.edt.org  port: 636  (default)
+  refcnt: 2  status: Connected
+  last used: Thu Mar 28 19:03:22 2019
+
+
+** ld 0x392e37d190 Outstanding Requests:
+ * msgid 2,  origid 2, status InProgress
+   outstanding referrals 0, parent count 0
+  ld 0x392e37d190 request count 1 (abandoned 0)
+** ld 0x392e37d190 Response Queue:
+   Empty
+  ld 0x392e37d190 response count 0
+ldap_chkResponseList ld 0x392e37d190 msgid -1 all 0
+ldap_chkResponseList returns ld 0x392e37d190 NULL
+ldap_int_select
+read1msg: ld 0x392e37d190 msgid -1 all 0
+ber_get_next
+tls_read: want=5, got=5
+  0000:  17 03 03 00 40                                     ....@             
+tls_read: want=64, got=64
+  0000:  47 9d fb 28 70 2c 5e 42  a3 e5 fa d2 cc 78 3a 7b   G..(p,^B.....x:{  
+  0010:  7a 9d 1c 19 d7 9c b1 45  cc 54 68 fd 33 2c cd 20   z......E.Th.3,.   
+  0020:  46 70 d4 10 08 e8 04 b6  c1 03 5e 7d 46 cb 34 23   Fp........^}F.4#  
+  0030:  f2 e3 1a b2 34 7c 0d 39  ae dc dd 4f d1 18 7d 13   ....4|.9...O..}.  
+ldap_read: want=8, got=8
+  0000:  30 16 02 01 02 64 11 04                            0....d..          
+ldap_read: want=16, got=16
+  0000:  0d 64 63 3d 65 64 74 2c  64 63 3d 6f 72 67 30 00   .dc=edt,dc=org0.  
+ber_get_next: tag 0x30 len 22 contents:
+read1msg: ld 0x392e37d190 msgid 2 message type search-entry
+ldap_get_dn_ber
+ber_scanf fmt ({ml{) ber:
+ber_scanf fmt ({xx) ber:
+ldap_get_attribute_ber
+ldap_msgfree
+ldap_result ld 0x392e37d190 msgid -1
+wait4msg ld 0x392e37d190 msgid -1 (infinite timeout)
+wait4msg continue ld 0x392e37d190 msgid -1 all 0
+** ld 0x392e37d190 Connections:
+* host: ldap.edt.org  port: 636  (default)
+  refcnt: 2  status: Connected
+  last used: Thu Mar 28 19:03:22 2019
+
+
+** ld 0x392e37d190 Outstanding Requests:
+ * msgid 2,  origid 2, status InProgress
+   outstanding referrals 0, parent count 0
+  ld 0x392e37d190 request count 1 (abandoned 0)
+** ld 0x392e37d190 Response Queue:
+   Empty
+  ld 0x392e37d190 response count 0
+ldap_chkResponseList ld 0x392e37d190 msgid -1 all 0
+ldap_chkResponseList returns ld 0x392e37d190 NULL
+ldap_int_select
+read1msg: ld 0x392e37d190 msgid -1 all 0
+ber_get_next
+tls_read: want=5, got=5
+  0000:  17 03 03 00 40                                     ....@             
+tls_read: want=64, got=64
+  0000:  93 d1 09 32 06 50 dc 90  41 b8 59 78 cf 07 5d 52   ...2.P..A.Yx..]R  
+  0010:  fb ce 2b 88 b7 0b 80 21  03 ad db 54 a2 e0 9a fe   ..+....!...T....  
+  0020:  54 6e 4d 70 7d 6f 0e 21  77 c8 68 de 68 d9 0b 7d   TnMp}o.!w.h.h..}  
+  0030:  50 4b c2 32 c5 61 35 24  04 23 02 da b7 f2 17 21   PK.2.a5$.#.....!  
+ldap_read: want=8, got=8
+  0000:  30 0c 02 01 02 65 07 0a                            0....e..          
+ldap_read: want=6, got=6
+  0000:  01 00 04 00 04 00                                  ......            
+ber_get_next: tag 0x30 len 12 contents:
+read1msg: ld 0x392e37d190 msgid 2 message type search-result
+ber_scanf fmt ({eAA) ber:
+read1msg: ld 0x392e37d190 0 new referrals
+read1msg:  mark request completed, ld 0x392e37d190 msgid 2
+request done: ld 0x392e37d190 msgid 2
+res_errno: 0, res_error: <>, res_matched: <>
+ldap_free_request (origid 2, msgid 2)
+ldap_parse_result
+ber_scanf fmt ({iAA) ber:
+ber_scanf fmt (}) ber:
+ldap_msgfree
+ldap_free_connection 1 1
+ldap_send_unbind
+ber_flush2: 7 bytes to sd 3
+tls_write: want=53, written=53
+  0000:  17 03 03 00 30 48 cf ef  17 b7 e0 9b 3e 16 4a c4   ....0H......>.J.  
+  0010:  c5 e9 20 3d 84 a0 38 89  d0 f4 55 5e 26 ae 82 84   .. =..8...U^&...  
+  0020:  47 f6 a8 0d 2b 98 14 98  c6 16 85 ed 10 89 93 4c   G...+..........L  
+  0030:  59 ae 5d 4b 1b                                     Y.]K.             
+ldap_write: want=7, written=7
+  0000:  30 05 02 01 03 42 00                               0....B.           
+tls_write: want=53, written=53
+  0000:  15 03 03 00 30 d0 0b 2a  c0 27 0e b9 be 67 f9 d9   ....0..*.'...g..  
+  0010:  09 79 4a 99 cb e8 44 98  8f 61 49 a0 cb 0a 8e c4   .yJ...D..aI.....  
+  0020:  9b f3 79 c0 ec e2 8d 31  20 f2 c6 ce b6 2d 4d b4   ..y....1 ....-M.  
+  0030:  b8 17 3b bf 5e                                     ..;.^             
+ldap_free_connection: actually freed
