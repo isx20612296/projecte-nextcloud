@@ -17,7 +17,7 @@ internes de molts tipus, variant entre eines comunicatives, edició d'arxius o o
 
 ## Collabora. L'editor de text derivat de LibreOffice
 
-Collabora és un packet d'editors collaboratius per treballar amb documents, fulls de càlcul i
+Collabora és un packet d'editors col·laboratius per treballar amb documents, fulls de càlcul i
 presentacions de diferents formats. És de codi obert, segur i allotjat al propi servidor del Nextcloud.
 
 *Collabora Development Edition* és gratuït, però està en continu desenvolupament i no està garantitzat
@@ -27,4 +27,5 @@ L'eina es pot utilitzar des del navegador i dispositius mòbils.
 
 ## Onlyoffice: La suite completa de productivitat
 
-Onlyoffice és, com Collabra, un paquet d'editors 
+Onlyoffice és, com Collabra, un paquet d'editors de documents, fulls de càlcul i presentacions. La
+*Community edition* és de codi obert
