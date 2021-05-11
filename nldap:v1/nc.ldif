@@ -4,7 +4,7 @@
 # -----------------------------------------------
 
 dn: dc=edt,dc=nextcloud,dc=org
-dc: nextcloud
+dc: edt
 description: Base de dades LDAP dels membres de Nextcloud
 objectClass: dcObject
 objectClass: organization
@@ -19,42 +19,6 @@ dn: ou=groups,dc=edt,dc=nextcloud,dc=org
 ou: groups
 description: Grups del Nextcloud
 objectclass: organizationalunit
-# ---------- Grups ------------------------------
-
-dn: cn=admin,ou=groups,dc=edt,dc=nextcloud,dc=org
-cn: admin
-gidNumber: 600
-description: Grup d'administradors
-memberUid: carles
-memberUid: andreu
-objectclass: posixGroup
-
-dn: cn=students,ou=groups,dc=edt,dc=nextcloud,dc=org
-cn: students
-gidNumber: 601
-description: Grup d'alumnes
-memberUid: mark
-memberUid: christian
-memberUid: diego
-memberUid: javier
-memberUid: roberto
-memberUid: alejandro
-memberUid: mati
-memberUid: carles
-memberUid: andreu
-memberUid: hicham
-objectclass: posixGroup
-
-dn: cn=teachers,ou=groups,dc=edt,dc=nextcloud,dc=org
-cn: teachers
-gidNumber: 602
-description: Grup de professors
-memberUid: eduard
-memberUid: maribel
-memberUid: ainhoa
-memberUid: montse
-memberUid: victor
-objectclass: posixGroup
 
 # ---------- Usuaris ----------------------------
 
