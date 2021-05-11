@@ -33,7 +33,7 @@ uid: eduard
 uidNumber: 5201
 gidNumber: 602
 homeDirectory: /tmp/home/eduard
-userPassword: {SSHA}3ay6imMe+ZegVnIm/eLcp68kHdYdVwE2
+userPassword: {SSHA}4Dw7GeOzkjqAt92EGghrOeiDGoPZRBOs
 
 dn: uid=maribel,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -45,7 +45,7 @@ uid: maribel
 uidNumber: 5202
 gidNumber: 602
 homeDirectory: /tmp/home/maribel
-userPassword: {SSHA}Nex0UFx/Y2wX+NgE3fjBMLVkyC79BQzb
+userPassword: {SSHA}RQAO5W9gKmbHVG9INBjmnZcVPib0YnWu
 
 dn: uid=ainhoa,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -57,19 +57,19 @@ uid: ainhoa
 uidNumber: 5203
 gidNumber: 602
 homeDirectory: /tmp/home/ainhoa
-userPassword: {SSHA}fGsKs/q1MQA2EqKthTbw6xJBmkTRmzwz
+userPassword: {SSHA}+gs+3K1eT9R7sUt+HnXDyuVVPlJlf9h6
 
 dn: uid=montse,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
 objectclass: inetOrgPerson
-cn: Montserrat
+cn: Montse
 sn: Soler
 ou: users
 uid: montse
 uidNumber: 5204
 gidNumber: 602
 homeDirectory: /tmp/home/montse
-userPassword: {SSHA}QM6iJYP5tyQG9CblCXn075xDqVCdGzgj
+userPassword: {SSHA}gegM+PafbuCg+Zg0G1wq+wU58uLaJSBB
 
 dn: uid=victor,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -81,21 +81,21 @@ uid: victor
 uidNumber: 5205
 gidNumber: 602
 homeDirectory: /tmp/home/victor
-userPassword: {SSHA}1sQ26hIJSAvSdDsydF08thZdZ8hb9wCs
+userPassword: {SSHA}IHkEimROQSVjgXkp6RHIe+bqxw3z4Qdq
 
 # --------- Alumnes --------------------------------
 
 dn: uid=mark,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
 objectclass: inetOrgPerson
-cn: Mark Stanley
+cn: Mark
 sn: Santiago
 ou: users
 uid: mark
 uidNumber: 5001
 gidNumber: 601
 homeDirectory: /tmp/home/mark
-userPassword: {SSHA}B1lsaE5C2yv+7Vl39zemCQvw/3LtQOMt
+userPassword: {SSHA}AHDGtAyvB+m08nfzgCXXCpT7Wj5Xl/bc
 
 dn: uid=diego,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -107,7 +107,7 @@ uid: diego
 uidNumber: 5002
 gidNumber: 601
 homeDirectory: /tmp/home/diego
-userPassword: {SSHA}CsiobfNtgVvIdGL2eWqHXzJQIYapZtyo
+userPassword: {SSHA}7sdVmGM9IJPHXrlTuB1XTNZFTKhn4CY/
 
 dn: uid=christian,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -119,7 +119,7 @@ uid: christian
 uidNumber: 5003
 gidNumber: 601
 homeDirectory: /tmp/home/christian
-userPassword: {SSHA}XjtkWPvn62qwO/tIGb0Nc95MD9hTZbb5
+userPassword: {SSHA}miStgAV1YPGIoPm62pJV//qlv/vbtGVR
 
 dn: uid=javier,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -131,7 +131,7 @@ uid: javier
 uidNumber: 5004
 gidNumber: 601
 homeDirectory: /tmp/home/javier
-userPassword: {SSHA}3TlcUv1QE3XUkVlaekduKlpq4ddkmHuH
+userPassword: {SSHA}wmNL/oBT0SjziTg64seJbuHI8CqB+WnW
 
 
 dn: uid=roberto,ou=users,dc=edt,dc=nextcloud,dc=org
@@ -144,7 +144,7 @@ uid: roberto
 uidNumber: 5005
 gidNumber: 601
 homeDirectory: /tmp/home/roberto
-userPassword: {SSHA}nodW4zJmMNfi6njWkrFCE1HZIqR8cyD5
+userPassword: {SSHA}nq/PDuYqveb5zqe9M+wxIpy3Tedq1mnC
 
 dn: uid=alejandro,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -156,7 +156,7 @@ uid: alejandro
 uidNumber: 5006
 gidNumber: 601
 homeDirectory: /tmp/home/alejandro
-userPassword: {SSHA}6Ef6j2hH8U+GLVHG+Siexlbj5VnzIYtH
+userPassword: {SSHA}5HhVaTCHRPjH5E0TMmaU1/bBLlmChBg/
 
 dn: uid=mati,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -168,7 +168,7 @@ uid: mati
 uidNumber: 5007
 gidNumber: 601
 homeDirectory: /tmp/home/mati
-userPassword: {SSHA}QiCRmS9iU5Z67nXtzbVFpAsWisKmJ1At
+userPassword: {SSHA}sUaeGYrBYFHin1ZdJRLGYpZdZLfNKglt
 
 dn: uid=carles,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -180,7 +180,7 @@ uid: carles
 uidNumber: 5008
 gidNumber: 601
 homeDirectory: /tmp/home/carles
-userPassword: {SSHA}zdASMe7WidzMkbuAZQMj4W0O88+nILTa 
+userPassword: {SSHA}QMQBiKbthdyXddg6Jiw4aTCPW3/aynt0 
 
 dn: uid=andreu,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -192,7 +192,7 @@ uid: andreu
 uidNumber: 5009
 gidNumber: 601
 homeDirectory: /tmp/home/andreu
-userPassword: {SSHA}4vcjF151+QwLeKBkkxgclmVd+vWgGIWk
+userPassword: {SSHA}AGc/MSO6J3CD6jPXW3j7sg5QGfhTUhvg
 
 dn: uid=hicham,ou=users,dc=edt,dc=nextcloud,dc=org
 objectclass: posixAccount
@@ -204,7 +204,7 @@ uid: hicham
 uidNumber: 5010
 gidNumber: 601
 homeDirectory: /tmp/home/hicham
-userPassword: {SSHA}IqzuxhEX11a3PYofJPXOuOkVd6S/G4YN
+userPassword: {SSHA}dWyBQOcXoVNOkbWA6T5PiW7iPV7h3RJf
 
 
 # ---------- Grups ------------------------------
