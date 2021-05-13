@@ -6,14 +6,13 @@
 
 ## Índex
 
-0. [Què és Nextcloud?](#quees)
+1. [Què és Nextcloud?](#quees)
 
-0. [Collabora](#colla)
+2. [Collabora](#colla)
 
-0. [Onlyoffice](#only)
+3. [Onlyoffice](#only)
 
-===
-## Què és Nextcloud?<span id="quees"/>
+1. ## Què és Nextcloud?<span id="quees"/>
 
 ![](imatges/Nextcloud.png)
 
@@ -30,9 +29,8 @@ un sistema GNU+Linux,des d'un aplicatiu per escriptori, des d'Android i des d'un
 a mans de serveis privatius. A més, es de fàcil gestió per part de l'administrador i conté aplicacions
 internes de molts tipus, variant entre eines comunicatives, edició d'arxius i oci.
 
-===
 
-## Collabora. L'editor de text derivat de LibreOffice<span id="colla"/>
+2. ## Collabora. L'editor de text derivat de LibreOffice<span id="colla"/>
 
 ![](imatges/collabora-office-logo.png)
 
@@ -46,7 +44,7 @@ L'eina es pot utilitzar des del navegador i dispositius mòbils.
 
 ===
 
-## Onlyoffice: La suite completa de productivitat<span id="only"/>
+3. ## Onlyoffice: La suite completa de productivitat<span id="only"/>
 
 ![](imatges/onlyoffice-logo.png)
 
