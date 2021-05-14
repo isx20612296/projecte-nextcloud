@@ -21,7 +21,7 @@ sleep 1
 echo -e "\t \t \e[34m Descàrrega dels fitxers \e[0m"
 wget https://download.nextcloud.com/server/releases/nextcloud-21.0.0.tar.bz2
 wget https://download.nextcloud.com/server/releases/nextcloud-21.0.0.tar.bz2.asc
-wget https://nextcloud.com/nextcloud.asc
+#wget https://nextcloud.com/nextcloud.asc
 
 echo -e "\t \t \e[34m Verifiquem clau GPG \e[0m"
 gpg --import nextcloud.asc
