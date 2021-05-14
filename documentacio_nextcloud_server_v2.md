@@ -1,6 +1,6 @@
 # Versió 2 del servidor
 
-## Servidor Nextcloud Millorat
+## Autoconfiguració i Onlyoffice
 
 Un cop ens hem familiaritzat amb el funcionament del Nextcloud, podem estudiar de quina forma
 es podria millorar el seu desplegament.
