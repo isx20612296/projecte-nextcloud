@@ -425,60 +425,48 @@ chown -R ldap.ldap /var/lib/ldap
 
 ## Configuració a Nextcloud per comunicar-se amb el contenidor ldap
 
-El primer que s'ha de fer és instalar el modul php de ldpa
+El primer que s'ha de fer és instalar el modul php de ldpa i reiniciar el servei apache
 
 ~~~
 apt install php-ldap
+
+service apache2 reload
 ~~~
 
+Després d'això cal anar al servidor i activar l'aplicació ***LDAP user and group backend*** i anar a la configuració de l'aplicació per
+configurar el servidor.
+
+</br></br>
 
 
+La primera pàgina és on s'especifica el *Host*, el *Port*, el *User DN* i la seva contrasenya, i finalment el *Base DN*.
 
+![](imatges/ldap_config1.png)
 
+</br></br>
 
+En la següent pestanya, la dels usuaris, cal especificar quins són els *ObjectClass* que buscarà.
 
+![](imatges/ldap_config2.png)
 
+</br></br>
 
+A la tercera pestanya es configuren els atributs de *Login*, els basics que t'ofereix Nextcloud són *LDAP / AD Username* i *LDAP / AD Email Address*, tot i que et permet escollir altres atributs que hagis donat als usuaris.
 
+![](imatges/ldap_config3.png)
 
+</br></br>
 
+En la última pestanya de configuració demana que s'especifiqui quins seran els grups que afegirà a la llista d'usuaris.
 
+![](imatges/ldap_config4.png)
 
+</br></br></br>
 
+Un cop feta la configuració, si s'accedeix a la llista d'usuaris es pot observar com ara ja apareixen tots i els grups corrresponents.
 
+![](imatges/users1.png)
 
+</br></br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](imatges/users2.png)
