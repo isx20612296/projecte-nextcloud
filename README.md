@@ -1,3 +1,5 @@
 # Projecte-Nextcloud
 
-Projecte final del Grau que tracta Nextcloud + Collabora / OnlyOffice
+Projecte final del Grau que tracta Nextcloud + Collabora / OnlyOffice.
+
+![](posterprojecteedt.png)
